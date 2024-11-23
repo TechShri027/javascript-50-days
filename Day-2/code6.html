@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in an array if all values are greater than 20 print true otherwise false -->
+     <script>
+        var arr=[23,34,33,88,55]
+        var isflag=true;
+        function check(){
+            for(var i=0; i<arr.length; i++){
+            if(arr[i]<20){
+                isflag=false
+               return ;
+                
+            }
+            }
+
+
+        }
+        check();
+        if(isflag){
+            console.log(`true`);
+            
+        }else{
+            console.log(`false`)
+        }
+        
+     
+        
+     </script>
+</body>
+</html>

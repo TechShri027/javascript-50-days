@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str=prompt("enter any string")
+        str=str.toLowerCase()
+var leng=str.length;
+var ispalindrome=true;
+for(var i=0; i<leng/2 ;i++){
+    if(str[i] != str[leng-1-i]){
+        ispalindrome=false;
+    }
+}
+if(ispalindrome){
+    console.log("The string is a palindrome");
+}else{
+    console.log("The string is not a palindrome");
+}
+    </script>
+</body>
+</html>
